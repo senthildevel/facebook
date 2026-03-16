@@ -1,0 +1,144 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      background-color: #262729;
+      font-family: "Roboto", sans-serif;
+  }
+
+  .container {
+      /* border: 3px solid red; */
+
+      width: min(100% - 40px, 1100px);
+      margin-inline: auto;
+  }
+
+  section {
+      padding-block: 40px;
+  }
+
+  .friends_container {
+      padding-inline: 10px;
+      color: #fff;
+  }
+
+  .friends_container_top {
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 20px;
+  }
+
+  .friends_container_top a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .friends_container_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .friends-card {
+      /* border: 3px solid blue; */
+      flex-basis: 100%;
+  }
+
+  .friends-card>img {
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+  }
+
+  .friends-card-content {
+      /* border: 3px solid green; */
+      padding: 10px;
+
+      border: 2px solid #616163;
+      border-top: none;
+
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+
+  .friends-card-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: lightcoral;
+      color: #fff;
+      width: 100%;
+      padding: 12px 40px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .confirm_btn {
+      background-color: #0865fe;
+  }
+
+  .delete_btn {
+      background-color: #3c3d3f;
+  }
+
+  .friends-card-mutual {
+      display: flex;
+      align-items: center;
+      /* gap: 5px; */
+  }
+
+  .friends-card-mutual span {
+      font-size: 16px;
+      color: #fff;
+  }
+
+  .friends-card-mutual img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+  }
+
+  .friends-card-content>* {
+      margin-bottom: 15px;
+  }
+
+  .friends-card-mutual-img {}
+
+  .friends-card-mutual-img img:last-child {
+      position: relative;
+      left: -10px;
+  }
+
+  .friends-card-content h3 {
+      color: #fff;
+  }
+
+  @media (min-width: 577px) {
+      .friends-card {
+          flex-basis: 48%;
+      }
+  }
+
+  @media (min-width: 768px) {
+      .friends-card {
+          flex-basis: 31.33%;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .friends-card {
+          flex-basis: 23%;
+      }
+  }
